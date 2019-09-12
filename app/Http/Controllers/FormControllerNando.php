@@ -10,8 +10,10 @@ class FormControllerNando extends Controller
      public function simpandata(Request $r){
     	
     	return view::make('nando.tampilform')
-    	->with('data',$r->nama)
-    	->with('jenis',$r->jk);
+    	->with('nama',$r->nama)
+    	->with('jenis',$r->jk)
+    	->with('alamat',$r->alamat)
+    	->with('notelp',$r->notel);
     }
 }
 

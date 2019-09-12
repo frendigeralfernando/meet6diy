@@ -2,18 +2,44 @@
 <html>
 <head>
 	<title></title>
-
+	<style type="text/css">
+		table{
+			background-color: #fff;
+			color:#000;
+			margin: 20% auto;
+			padding: 2%
+		}
+	</style>
 </head>
 <body>
-	<h1>Nama anda adalah {{ $data }}</h1>
-	<h2>Jenis Kelamin Andalah {{ $jenis }}</h2>
-
+	<table>
+			<tr>
+				<td>Nama</td>
+				<td>:</td>
+				<td>{{ $nama }}</td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>:</td>
+				<td>{{ $jenis }}</td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td>:</td>
+				<td>{{ $alamat }}</td>
+			</tr>
+			<tr>
+				<td>No Telp</td>
+				<td>:</td>
+				<td>{{ $notelp }}</td>
+			</tr>
+	</table>
 	@if($jenis=='pria')
 		<style type="text/css">
 			body{
 				background-color: #B22222;
 				color:#fff;
-				text-align: center;
+				
 			}
 		</style>
 	@elseif($jenis=='wanita')
@@ -21,7 +47,7 @@
 			body{
 				background-color: #008000;
 				color:#B22222;
-				text-align: center;
+				
 			}
 		</style>
 	@else
