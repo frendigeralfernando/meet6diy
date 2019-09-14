@@ -19,3 +19,9 @@ Route::get('/formnando', function () {
     return view('nando.form');
 });
 Route::get('form/simpan', 'FormControllerNando@simpandata');
+
+Route::get('/formsidiq', function(){
+	return view('sidiq.form');
+});
+
+Route::get('form/simpan', 'FormControllerSidiq@simpandata');
