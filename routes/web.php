@@ -25,3 +25,9 @@ Route::get('/formsidiq', function(){
 });
 
 Route::get('form/simpan', 'FormControllerSidiq@simpandata');
+
+Route::get('/formrendi', function() {
+	return view('rendi.form');
+});
+
+Route::post('/rendi/simpan', 'FormControllerRendi@simpandata');
