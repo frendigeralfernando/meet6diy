@@ -29,5 +29,9 @@ Route::get('form/simpan', 'FormControllerSidiq@simpandata');
 Route::get('/formrendi', function() {
 	return view('rendi.form');
 });
-
 Route::post('/rendi/simpan', 'FormControllerRendi@simpandata');
+
+Route::get('/form', function () {
+    return view('tasyaazura.form');
+});
+Route::get('/coba','BasicController@tampil_coba');
