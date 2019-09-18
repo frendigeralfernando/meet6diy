@@ -10,28 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/formnando', function () {
-    return view('nando.form');
-});
-Route::get('form/simpan', 'FormControllerNando@simpandata');
-
-Route::get('/formsidiq', function(){
-	return view('sidiq.form');
-});
-
-Route::get('form/simpan', 'FormControllerSidiq@simpandata');
-
-Route::get('/formrendi', function() {
-	return view('rendi.form');
-});
-Route::post('/rendi/simpan', 'FormControllerRendi@simpandata');
-
 Route::get('/form', function () {
-    return view('tasyaazura.form');
+    return view('form');
 });
-Route::get('/coba','BasicController@tampil_coba');
+Route::get('form/simpan', 'FormController@simpandata');
