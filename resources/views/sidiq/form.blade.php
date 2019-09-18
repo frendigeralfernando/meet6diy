@@ -18,6 +18,7 @@
 				<form class="needs-validation" method="get" action="form/simpan" novalidate>
 					<div>
 						<label>Nama</label>
+
 			          	<input class="input form-control form-control-lg" type="text" name="name" required>
 			        </div>
 
@@ -44,6 +45,7 @@
 				</form>
 			</div>
 		</div>
+		
 	</div>
 
 	<script type="text/javascript">

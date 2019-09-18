@@ -31,3 +31,11 @@ Route::get('/formrendi', function() {
 });
 
 Route::post('/rendi/simpan', 'FormControllerRendi@simpandata');
+
+Route::post('/wahyu/simpan', 'FormControllerWahyu@simpandata');
+
+Route::get('wahyu/simpan', 'FormControllerWahyu@simpandata');
+
+Route::get('/formwahyu', function() {
+	return view('wahyu.form');
+});

@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<form method="get" action="form/simpan">
+	<form method="get" action="wahyu/simpan">
 		@csrf
 		<table>
 			<tr>
