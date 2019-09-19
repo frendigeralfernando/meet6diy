@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Nando</title>
 </head>
 <body>
 	<form method="get" action="form/simpan">
