@@ -30,7 +30,7 @@
 	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container-flex">
 		<div class="row d-flex align-items-stretch mt-3">
 				<div class="col-6 result">
 					<h1>Data Diri</h1>
